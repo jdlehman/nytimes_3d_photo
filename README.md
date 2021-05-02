@@ -16,3 +16,9 @@ wget -mpk --no-clobber --page-requisites --adjust-extension --convert-links --no
 # example
 wget -mpk --no-clobber --page-requisites --adjust-extension --convert-links --no-parent --ignore-tags=script www.nytimes.com/section/travel
 ```
+
+## Host Locally
+
+```
+python -m SimpleHTTPServer 8000
+```
