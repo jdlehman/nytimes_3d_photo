@@ -15,7 +15,7 @@
   // replace with 3D photos corresponding to article images
   const articlePhoto3DUrls = [
     null,
-    null,
+    'https://www.facebook.com/mikhael.kohen.75/posts/108894971367572',
     null,
   ];
   let main3DPhotoUrl = 'https://www.facebook.com/mikhael.kohen.75/posts/108828791374190';
@@ -23,21 +23,21 @@
   const articlePhotoCSS = '.css-zjzyr8';
 
   const overrideUrl = getParameterByName("overrideurl");
-  const all = getParameterByName("all");
   if (overrideUrl) {
     main3DPhotoUrl = overrideUrl;
-  } else if (all) {
-    const smallPhotos = document.querySelectorAll(articlePhotoCSS);
-    let i = 0;
-    smallPhotos.forEach(function(node) {
-      console.log(node)
-      if (articlePhoto3DUrls[i] != null) {
-        replacePhotoWith3DPhoto(node, articlePhoto3DUrls[i], 720);
-      }
-      i++;
-    });
   }
 
+  // replace main photo
   const mainPhoto = document.querySelector(mainPhotoCSS);
   replacePhotoWith3DPhoto(mainPhoto, main3DPhotoUrl, 1000);
+
+  // replace article photos
+  const articlePhotos = document.querySelectorAll(articlePhotoCSS);
+  let i = 0;
+  articlePhotos.forEach(function(node) {
+    if (articlePhoto3DUrls[i] != null) {
+      replacePhotoWith3DPhoto(node, articlePhoto3DUrls[i], 720);
+    }
+    i++;
+  });
 }());
