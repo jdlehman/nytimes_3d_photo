@@ -27,7 +27,7 @@
     null,
     null,
   ];
-  let main3DPhotoUrl = 'https://www.facebook.com/michael.cohen.12764/posts/10159452170718699';
+  let main3DPhotoUrl = 'https://www.facebook.com/mikhael.kohen.75/posts/108828791374190';
   const mainPhotoCSS = '.css-bsn42l';
   const articlePhotoCSS = '.css-zjzyr8';
 
