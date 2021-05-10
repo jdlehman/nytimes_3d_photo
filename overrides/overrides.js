@@ -12,17 +12,8 @@
         `;
   }
 
+  // replace with 3D photos corresponding to article images
   const articlePhoto3DUrls = [
-    null,
-    null,
-    'https://www.facebook.com/michael.cohen.12764/posts/10159452170718699',
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null,
